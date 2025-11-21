@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QuickCart Compare</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div id="h">
+    <header class="header">
+      <h1>QuickCart Compare</h1>
+      <p>Compare prices across Blinkit, Instamart &amp; Zepto</p>
+    </header>
+
+    <!-- Search -->
+    <section class="search-section">
+      <form id="searchForm" class="search-bar">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search product (e.g. milk, bread, curd)"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div class="platforms-note">
+        • Blinkit &nbsp; • Instamart &nbsp; • Zepto
+      </div>
+    </section>
+    </div>
+
+    <!-- 6 PRODUCT BOXES (auto-rotate) -->
+    <section id="suggestionSection" class="suggestion-section">
+      <!-- 6 cards – content will be filled & rotated by JS -->
+      <div class="product-card">
+        <div class="card-icon">🥛</div>
+        <h3 class="card-title">Milk</h3>
+        <p class="card-desc">Tap to compare milk prices instantly.</p>
+        <button class="card-btn">Compare Milk</button>
+      </div>
+
+      <div class="product-card">
+        <div class="card-icon">🍞</div>
+        <h3 class="card-title">Bread</h3>
+        <p class="card-desc">See where bread is cheapest right now.</p>
+        <button class="card-btn">Compare Bread</button>
+      </div>
+
+      <div class="product-card">
+        <div class="card-icon">🥣</div>
+        <h3 class="card-title">Curd</h3>
+        <p class="card-desc">Find the best curd price across apps.</p>
+        <button class="card-btn">Compare Curd</button>
+      </div>
+
+      <div class="product-card">
+        <div class="card-icon">🍚</div>
+        <h3 class="card-title">Rice</h3>
+        <p class="card-desc">Quickly compare rice prices.</p>
+        <button class="card-btn">Compare Rice</button>
+      </div>
+
+      <div class="product-card">
+        <div class="card-icon">🛢️</div>
+        <h3 class="card-title">Oil</h3>
+        <p class="card-desc">Check which app gives cheaper oil.</p>
+        <button class="card-btn">Compare Oil</button>
+      </div>
+
+      <div class="product-card">
+        <div class="card-icon">🧂</div>
+        <h3 class="card-title">Sugar</h3>
+        <p class="card-desc">Compare sugar prices in one click.</p>
+        <button class="card-btn">Compare Sugar</button>
+      </div>
+    </section>
+
+    <!-- SEARCH RESULT SECTION -->
+    <section id="resultSection" class="result-section hidden">
+      <h2 id="resultTitle">Result</h2>
+
+      <div id="priceList" class="price-list"></div>
+
+      <div id="bestPlatformBox" class="best-platform-box hidden">
+        <span id="bestPlatformText"></span>
+        <button id="bestPlatformBtn" type="button"></button>
+        <p class="small-note">
+          *Button opens only the site/app homepage, not a specific product.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      
+       © 2025 QuickCart Compare — All rights reserved.
+
+
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
